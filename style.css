@@ -1,0 +1,67 @@
+#container{
+    display: flex;
+    flex-direction: column;
+}
+#container div{
+    max-width: 100%;
+    border: 1px solid black;
+    background: #ccc;
+}
+
+#title{
+    text-align: center;
+}
+img{
+    max-width: 100%;
+}
+
+footer p{
+    font-size: 1.2em;
+    color:#eee;
+    text-align: center;
+    line-height: 200px;
+}
+
+@media all and (min-width: 768px){
+    #container div{
+        margin: 0;
+    }
+    #menus{
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #menu1, #menu2, #menu3, #menu4{
+        width: 49%;
+    }
+    #menu5{
+        width:100%;
+    }
+    footer{
+        width:100%;
+    }
+}
+@media all and (min-width: 992px){
+    #title{
+        width:100%;
+    }
+    #menus{
+        display: flex;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #menu1, #menu2, #menu3, #menu4, #menu5{
+        width: 33%;
+    }
+    #menu5{
+        margin-left: 0.5%;
+        flex:2 2 0;
+    }
+    footer{
+        width:100%;
+    }
+}
